@@ -11,8 +11,11 @@ $font-stack: 'Open Sans', sans-serif;
 
 body {
   margin: 0px;
+  text-decoration: none;
+  padding-bottom: 50vh;
 }
 #navBar {
+  margin-top: 7vh;
   background-color: whitesmoke;
   display: grid;
   grid-template-columns: repeat(4, auto);
@@ -25,10 +28,13 @@ body {
   }
   a:hover {
     color: $highlight-color;
+    text-decoration: underline;
   }
 }
 
 #topbar {
+  position: fixed;
+  top: 0;
   background-color: $call-to-action;
   width: 100vw;
   display: flex;
@@ -44,12 +50,14 @@ body {
     }
     a:hover {
       color: $text-color;
+      text-decoration: underline;
     }
   }
 }
 
 #footer {
-  position: absolute;
+  z-index: 10;
+  position: fixed;
   bottom: 0;
   width: 100%;
   background-color: $bg-color;
@@ -78,6 +86,7 @@ body {
   }
   a:hover {
     color: $highlight-color;
+    text-decoration: underline;
   }
 }
 
