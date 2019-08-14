@@ -1,0 +1,77 @@
+body {
+  margin: 0px;
+}
+
+#navBar {
+  background-color: whitesmoke;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  padding: 3vh;
+}
+#navBar a {
+  font-family: 'Gentium Basic', serif;
+  color: #3c4043;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+#navBar a:hover {
+  color: #009388;
+}
+
+#topbar {
+  background-color: #de4c40;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#topbar p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.76em;
+  color: #f0f0f0;
+}
+#topbar p a {
+  text-decoration: none;
+  color: #89fff6;
+}
+#topbar p a:hover {
+  color: #3c4043;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #f0f0f0;
+  display: inline-grid;
+  grid-template-columns: repeat(3, auto);
+  padding-top: 3vh;
+  padding-bottom: 5vh;
+}
+
+#ftcontainer {
+  grid-column-start: 2;
+  display: inline-grid;
+  grid-template-columns: repeat(2, auto);
+}
+#ftcontainer p {
+  color: #0b005d;
+  font-family: 'Gentium Basic', serif;
+  font-size: 0.85em;
+}
+#ftcontainer a {
+  font-family: 'Gentium Basic', serif;
+  text-decoration: none;
+  color: #3c4043;
+  display: block;
+  font-size: 0.75em;
+}
+#ftcontainer a:hover {
+  color: #009388;
+}
+
+#quick-lnks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

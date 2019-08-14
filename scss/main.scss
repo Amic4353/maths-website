@@ -1,0 +1,87 @@
+$primary-color: #0b005d;
+$highlight-color: #009388;
+$call-to-action: #de4c40;
+$call-to-highlight: #89fff6;
+$text-color: #3c4043;
+$bg-color: #f0f0f0;
+
+$titles: 'Gentium Basic', serif;
+$font-stack: 'Open Sans', sans-serif;
+
+body {
+  margin: 0px;
+}
+#navBar {
+  background-color: whitesmoke;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  padding: 3vh;
+  a {
+    font-family: $titles;
+    color: $text-color;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  a:hover {
+    color: $highlight-color;
+  }
+}
+
+#topbar {
+  background-color: $call-to-action;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  p {
+    font-family: $font-stack;
+    font-size: 0.76em;
+    color: $bg-color;
+    a {
+      text-decoration: none;
+      color: $call-to-highlight;
+    }
+    a:hover {
+      color: $text-color;
+    }
+  }
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: $bg-color;
+  display: inline-grid;
+  grid-template-columns: repeat(3, auto);
+  padding-top: 3vh;
+  padding-bottom: 5vh;
+}
+
+#ftcontainer {
+  grid-column-start: 2;
+  display: inline-grid;
+  grid-template-columns: repeat(2, auto);
+
+  p {
+    color: $primary-color;
+    font-family: $titles;
+    font-size: 0.85em;
+  }
+  a {
+    font-family: $titles;
+    text-decoration: none;
+    color: $text-color;
+    display: block;
+    font-size: 0.75em;
+  }
+  a:hover {
+    color: $highlight-color;
+  }
+}
+
+#quick-lnks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
