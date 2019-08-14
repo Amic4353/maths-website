@@ -4,6 +4,7 @@ $call-to-action: #de4c40;
 $call-to-highlight: #89fff6;
 $text-color: #3c4043;
 $bg-color: #f0f0f0;
+$box-shadow: rgba(150, 150, 150, 0.4);
 
 $titles: 'Gentium Basic', serif;
 $font-stack: 'Open Sans', sans-serif;
@@ -85,3 +86,5 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+
+@import 'hpg.scss';

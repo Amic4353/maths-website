@@ -1,0 +1,29 @@
+#headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#headline-text {
+  max-width: 80vw;
+  padding: 7vh 0vw 3vh 0vw;
+}
+
+h1 {
+  color: $primary-color;
+  font-size: 5vh;
+  font-weight: 100;
+}
+
+#headline-box {
+  background-color: $bg-color;
+  max-width: 80vw;
+  box-shadow: 5px 5px 10px $box-shadow;
+  p {
+    padding: 3vh;
+    color: $text-color;
+    text-align: center;
+    font-family: $font-stack;
+    font-size: 0.8em;
+  }
+}
