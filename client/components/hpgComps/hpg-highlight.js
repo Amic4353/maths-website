@@ -15,20 +15,23 @@ const ColorButton = withStyles(theme => ({
   }
 }))(Button)
 
-export default function About() {
+export default function Highlight() {
   return (
     <div className="highlight">
       <div className="highlight-text">
-        <h2>About & Publications</h2>
+        <h2>Free Preparation Course</h2>
       </div>
+      <img id="hi-img" src="https://i.imgur.com/nOgXQ7F.jpg" />
       <div className="highlight-box" />
-      <div id="abt-content">
-        <p>about section text font for about george math maths math maths.</p>
+      <div id="hi-content">
+        <p>
+          I'm organizing a free prep class for 6th year higher level. The class
+          will cover algebra, logs and trigonomentry.
+        </p>
         <ColorButton variant="contained" color="#009388">
-          Learn More
+          Get Started
         </ColorButton>
       </div>
-      <img id="abt-img" src="https://i.imgur.com/LK4FEiC.jpg" />
     </div>
   )
 }

@@ -54,3 +54,98 @@ h1 {
   border: 2px solid;
   border-color: #009388;
 }
+
+.highlight {
+  padding-top: 7vh;
+  display: grid;
+  grid-template-columns: [first] 19% [line2] auto [line3] 20% [end];
+  grid-template-rows: repeat(5, 5vh [high-row]);
+  .highlight-box {
+    grid-column: line2 / line2;
+    grid-row: high-row 2 / high-row 4;
+    background-color: $bg-color;
+    width: 60vw;
+    height: 14vh;
+    z-index: -1;
+    box-shadow: 5px 5px 10px $box-shadow;
+  }
+  .highlight-text {
+    grid-column-start: line2;
+    h2 {
+      z-index: 1;
+      text-align: center;
+      color: $text-color;
+      font-size: 1.5em;
+      font-weight: 100;
+    }
+  }
+  #hi-content {
+    padding: 1vh 3vw 0 20vw;
+    grid-column: line2 / line2;
+    grid-row: high-row 2 / high-row 4;
+    p {
+      font-size: 0.8em;
+      font-family: $font-stack;
+    }
+  }
+  #hi-img {
+    grid-column-start: line2;
+    grid-row: high-row 1 / high-row 5;
+    max-width: auto;
+    height: 25vh;
+    padding-left: 3vw;
+  }
+  #abt-content {
+    padding: 1vh 20vw 0 3vw;
+    grid-column: line2 / line2;
+    grid-row: high-row 2 / high-row 4;
+    p {
+      font-size: 0.8em;
+      font-family: $font-stack;
+    }
+  }
+  #abt-img {
+    grid-column-start: line2;
+    grid-row: high-row 1 / high-row 5;
+    max-width: auto;
+    height: 25vh;
+    padding-left: 43vw;
+  }
+}
+
+.hpgBtn {
+  background-color: $highlight-color;
+  font-family: $titles;
+  color: $bg-color;
+}
+
+#signup {
+  background-color: $call-to-action;
+  width: 45vw;
+  height: 12vh;
+  padding: 10px;
+
+  p {
+    color: $bg-color;
+    font-family: $font-stack;
+    font-size: 0.8em;
+  }
+  form {
+    background: whitesmoke;
+    color: $text-color;
+    width: 30vw;
+    height: 3vh;
+  }
+  button {
+    background-color: $call-to-action;
+    color: whitesmoke;
+    font-family: $font-stack;
+    font-size: 1.25em;
+    border: none;
+  }
+  button:hover {
+    color: $bg-color;
+    border: 1px solid;
+    border-color: $text-color;
+  }
+}

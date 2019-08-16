@@ -15,7 +15,7 @@ body {
   padding-bottom: 50vh;
 }
 #navBar {
-  margin-top: 7vh;
+  margin-top: 5vh;
   background-color: whitesmoke;
   display: grid;
   grid-template-columns: repeat(4, auto);
@@ -40,6 +40,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  z-index: 10;
+  height: 4vh;
   p {
     font-family: $font-stack;
     font-size: 0.76em;
