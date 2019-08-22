@@ -1,7 +1,20 @@
 body {
   margin: 0px;
   text-decoration: none;
-  padding-bottom: 50vh;
+  padding-bottom: 30vh;
+}
+
+h1 {
+  color: #0b005d;
+  font-size: 5vh;
+  font-weight: 100;
+}
+
+h2 {
+  text-align: center;
+  color: #3c4043;
+  font-size: 1.5em;
+  font-weight: 100;
 }
 
 #navBar {
@@ -96,12 +109,6 @@ body {
 #headline-text {
   max-width: 80vw;
   padding: 7vh 0vw 3vh 0vw;
-}
-
-h1 {
-  color: #0b005d;
-  font-size: 5vh;
-  font-weight: 100;
 }
 
 #headline-box {
@@ -208,11 +215,18 @@ h1 {
   color: #f0f0f0;
 }
 
+#signup-container {
+  margin-top: 30vh;
+  display: grid;
+  grid-template-columns: [first] 19% [line2] auto [line3] 20% [end];
+}
+
 #signup {
+  grid-column: line2 / line2;
   background-color: #de4c40;
-  width: 45vw;
+  width: 54vw;
   height: 12vh;
-  padding: 10px;
+  padding: 1vh 3vw 1vh 4vh;
 }
 #signup p {
   color: #f0f0f0;
@@ -222,7 +236,7 @@ h1 {
 #signup form {
   background: whitesmoke;
   color: #3c4043;
-  width: 30vw;
+  width: 45vw;
   height: 3vh;
 }
 #signup button {
@@ -231,9 +245,13 @@ h1 {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.25em;
   border: none;
+  margin-left: 1vw;
 }
 #signup button:hover {
   color: #f0f0f0;
   border: 1px solid;
   border-color: #3c4043;
+}
+#signup #signup-form {
+  display: flex;
 }

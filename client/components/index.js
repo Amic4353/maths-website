@@ -6,3 +6,6 @@ export {default as Footer} from './footer'
 
 //hpg comps
 export {default as Homepage} from './hpg'
+
+//pages
+export {default as About} from './about'

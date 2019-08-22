@@ -12,8 +12,21 @@ $font-stack: 'Open Sans', sans-serif;
 body {
   margin: 0px;
   text-decoration: none;
-  padding-bottom: 50vh;
+  padding-bottom: 30vh;
 }
+
+h1 {
+  color: $primary-color;
+  font-size: 5vh;
+  font-weight: 100;
+}
+h2 {
+  text-align: center;
+  color: $text-color;
+  font-size: 1.5em;
+  font-weight: 100;
+}
+
 #navBar {
   margin-top: 5vh;
   background-color: whitesmoke;

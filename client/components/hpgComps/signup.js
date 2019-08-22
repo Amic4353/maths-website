@@ -10,11 +10,13 @@ class SignUp extends React.Component {
   }
   render() {
     return (
-      <div id="signup">
-        <p>Subscribe for the latest events and course updates.</p>
-        <div>
-          <form>box placeholder</form>
-          <button type="submit">Sign Up</button>
+      <div id="signup-container">
+        <div id="signup">
+          <p>Subscribe for the latest events and course updates.</p>
+          <div id="signup-form">
+            <form>box placeholder</form>
+            <button type="submit">SIGN UP</button>
+          </div>
         </div>
       </div>
     )
