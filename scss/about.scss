@@ -1,18 +1,34 @@
 #about-container {
   display: grid;
-  grid-template-columns: [first] 15% [content] auto [last] 15% [end];
+  grid-template-columns: [first] 15% [line2] auto [line3] 15% [end];
+}
+
+#about-column {
+  grid-column: line2 / span 1;
 }
 
 #about-content {
+  display: flex;
+  justify-content: space-between;
   p {
+    width: 45%;
   }
   img {
+    width: 50%;
   }
 }
 
 #about-img-grid {
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(4, auto);
   grid-template-rows: repeat(2, auto);
   grid-gap: 1vh;
+  img {
+    width: 13vw;
+    height: auto;
+  }
+  .colorBtn {
+    width: 13vw;
+    height: auto;
+  }
 }

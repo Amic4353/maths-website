@@ -255,3 +255,38 @@ h2 {
 #signup #signup-form {
   display: flex;
 }
+
+#about-container {
+  display: grid;
+  grid-template-columns: [first] 15% [line2] auto [line3] 15% [end];
+}
+
+#about-column {
+  grid-column: line2 / span 1;
+}
+
+#about-content {
+  display: flex;
+  justify-content: space-between;
+}
+#about-content p {
+  width: 45%;
+}
+#about-content img {
+  width: 50%;
+}
+
+#about-img-grid {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-gap: 1vh;
+}
+#about-img-grid img {
+  width: 13vw;
+  height: auto;
+}
+#about-img-grid .colorBtn {
+  width: 13vw;
+  height: auto;
+}
