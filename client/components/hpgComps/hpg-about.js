@@ -24,7 +24,7 @@ export default function About() {
       <div className="highlight-box" />
       <div id="abt-content">
         <p>about section text font for about george math maths math maths.</p>
-        <ColorButton variant="contained" color="#009388">
+        <ColorButton href="/about" variant="contained" color="#009388">
           Learn More
         </ColorButton>
       </div>

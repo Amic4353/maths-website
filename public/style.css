@@ -1,7 +1,7 @@
 body {
   margin: 0px;
   text-decoration: none;
-  padding-bottom: 30vh;
+  padding-bottom: 50vh;
 }
 
 h1 {
@@ -216,36 +216,31 @@ h2 {
 }
 
 #signup-container {
-  margin-top: 30vh;
+  margin-top: 24vh;
   display: grid;
   grid-template-columns: [first] 19% [line2] auto [line3] 20% [end];
 }
 
 #signup {
-  grid-column: line2 / line2;
   background-color: #de4c40;
+  grid-column: line2 / line2;
   width: 54vw;
-  height: 12vh;
-  padding: 1vh 3vw 1vh 4vh;
+  padding: 1vh 3vw 3vh 4vh;
 }
 #signup p {
   color: #f0f0f0;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 0.8em;
+  font-family: 'Gentium Basic', serif;
+  font-size: 1.2em;
 }
 #signup form {
-  background: whitesmoke;
   color: #3c4043;
-  width: 45vw;
-  height: 3vh;
 }
 #signup button {
   background-color: #de4c40;
   color: whitesmoke;
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.25em;
+  font-size: 1em;
   border: none;
-  margin-left: 1vw;
 }
 #signup button:hover {
   color: #f0f0f0;
@@ -254,6 +249,14 @@ h2 {
 }
 #signup #signup-form {
   display: flex;
+}
+#signup .form-group label {
+  color: whitesmoke;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8em;
+}
+#signup .form-group textarea {
+  width: 54vw;
 }
 
 #about-container {

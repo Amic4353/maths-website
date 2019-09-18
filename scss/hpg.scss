@@ -113,35 +113,30 @@
   color: $bg-color;
 }
 #signup-container {
-  margin-top: 30vh;
+  margin-top: 24vh;
   display: grid;
   grid-template-columns: [first] 19% [line2] auto [line3] 20% [end];
 }
 
 #signup {
-  grid-column: line2 / line2;
   background-color: $call-to-action;
+  grid-column: line2 / line2;
   width: 54vw;
-  height: 12vh;
-  padding: 1vh 3vw 1vh 4vh;
+  padding: 1vh 3vw 3vh 4vh;
   p {
     color: $bg-color;
-    font-family: $font-stack;
-    font-size: 0.8em;
+    font-family: $titles;
+    font-size: 1.2em;
   }
   form {
-    background: whitesmoke;
     color: $text-color;
-    width: 45vw;
-    height: 3vh;
   }
   button {
     background-color: $call-to-action;
     color: whitesmoke;
     font-family: $font-stack;
-    font-size: 1.25em;
+    font-size: 1em;
     border: none;
-    margin-left: 1vw;
   }
   button:hover {
     color: $bg-color;
@@ -150,5 +145,15 @@
   }
   #signup-form {
     display: flex;
+  }
+  .form-group {
+    label {
+      color: whitesmoke;
+      font-family: $font-stack;
+      font-size: 0.8em;
+    }
+    textarea {
+      width: 54vw;
+    }
   }
 }
