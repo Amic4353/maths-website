@@ -82,6 +82,13 @@ h2 {
   font-family: 'Gentium Basic', serif;
   font-size: 0.85em;
 }
+#ftcontainer #tel {
+  font-family: 'Gentium Basic', serif;
+  text-decoration: none;
+  color: #3c4043;
+  display: block;
+  font-size: 0.75em;
+}
 #ftcontainer a {
   font-family: 'Gentium Basic', serif;
   text-decoration: none;
@@ -292,4 +299,40 @@ h2 {
 #about-img-grid .colorBtn {
   width: 13vw;
   height: auto;
+}
+#about-img-grid #about-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#faqContainer {
+  margin-top: 8vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#faqContainer .question {
+  font-family: 'Gentium Basic', serif;
+  font-size: 1em;
+}
+#faqContainer .answer {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.7em;
+  color: #3c4043;
+}
+
+#testContainer {
+  margin-top: 8vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#testContainer #testContent .question {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+}
+#testContainer #testContent .answer {
+  font-family: 'Gentium Basic', serif;
+  font-size: 0.7em;
 }

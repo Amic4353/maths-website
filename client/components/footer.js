@@ -64,13 +64,13 @@ export default class Footer extends React.Component {
             >
               E-mail: georgeedwardhumphrey@gmail.com
             </a>
-            <Link to="">Tel: 087 978 7380</Link>
+            <p id="tel">Tel: 087 978 7380</p>
           </div>
           <div id="quick-lnks">
-            <Link to="">FAQ</Link>
+            <Link to="/faq">FAQ</Link>
             <Link to="">Course Schedule</Link>
             <Link to="/about">About</Link>
-            <Link to="">Testimonials</Link>
+            <Link to="/testimonials">Testimonials</Link>
           </div>
         </div>
         <div>

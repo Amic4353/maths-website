@@ -92,6 +92,13 @@ h2 {
     font-family: $titles;
     font-size: 0.85em;
   }
+  #tel {
+    font-family: $titles;
+    text-decoration: none;
+    color: $text-color;
+    display: block;
+    font-size: 0.75em;
+  }
   a {
     font-family: $titles;
     text-decoration: none;
@@ -113,3 +120,4 @@ h2 {
 
 @import 'hpg.scss';
 @import 'about.scss';
+@import 'footerPages.scss';

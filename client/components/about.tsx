@@ -47,10 +47,18 @@ export default function About() {
               <img src={img} />
             </div>
           ))}
-
-          <ColorButton className="colorBtn" variant="contained">
-            Check Out Courses
-          </ColorButton>
+          <div id="about-buttons">
+            <ColorButton className="colorBtn" variant="contained">
+              Check Out Courses
+            </ColorButton>
+            <ColorButton
+              className="colorBtn"
+              variant="contained"
+              href="/testimonials"
+            >
+              Read Testimonials
+            </ColorButton>
+          </div>
         </div>
       </div>
     </div>

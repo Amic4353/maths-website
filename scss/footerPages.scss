@@ -1,0 +1,33 @@
+#faqContainer {
+  margin-top: 8vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .question {
+    font-family: $titles;
+    font-size: 1em;
+  }
+
+  .answer {
+    font-family: $font-stack;
+    font-size: 0.7em;
+    color: $text-color;
+  }
+}
+
+#testContainer {
+  margin-top: 8vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  #testContent {
+    .question {
+      font-family: $font-stack;
+      font-size: 1em;
+    }
+    .answer {
+      font-family: $titles;
+      font-size: 0.7em;
+    }
+  }
+}

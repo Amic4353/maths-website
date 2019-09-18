@@ -9,3 +9,5 @@ export {default as Homepage} from './hpg'
 
 //pages
 export {default as About} from './about'
+export {default as FAQ} from './faq'
+export {default as Testimonials} from './testimonials'

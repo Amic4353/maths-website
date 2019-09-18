@@ -31,4 +31,9 @@
     width: 13vw;
     height: auto;
   }
+  #about-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
 }
