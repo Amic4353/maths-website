@@ -48,7 +48,11 @@ export default function About() {
             </div>
           ))}
           <div id="about-buttons">
-            <ColorButton className="colorBtn" variant="contained">
+            <ColorButton
+              className="colorBtn"
+              variant="contained"
+              href="/courses"
+            >
               Check Out Courses
             </ColorButton>
             <ColorButton

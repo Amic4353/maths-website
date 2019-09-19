@@ -68,7 +68,7 @@ export default class Footer extends React.Component {
           </div>
           <div id="quick-lnks">
             <Link to="/faq">FAQ</Link>
-            <Link to="">Course Schedule</Link>
+            <Link to="/courses">Course Schedule</Link>
             <Link to="/about">About</Link>
             <Link to="/testimonials">Testimonials</Link>
           </div>

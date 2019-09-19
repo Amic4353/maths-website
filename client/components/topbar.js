@@ -6,7 +6,7 @@ export default function TopBar() {
     <div id="topbar">
       <p>
         Now taking booking for project maths - Junior and Leaving Certificate.{' '}
-        <Link to=""> Sign Up Now</Link>
+        <Link to="/courses"> Find Your Course Today</Link>
       </p>
     </div>
   )

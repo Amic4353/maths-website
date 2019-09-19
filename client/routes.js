@@ -9,7 +9,11 @@ import {
   Homepage,
   About,
   FAQ,
-  Testimonials
+  Testimonials,
+  CourseSchedule,
+  SixthYear,
+  FifthYear,
+  ThirdYear
 } from './components'
 import {me} from './store'
 
@@ -27,6 +31,10 @@ class Routes extends Component {
         <Route exact path="/about" component={About} />
         <Route exact path="/faq" component={FAQ} />
         <Route exact path="/testimonials" component={Testimonials} />
+        <Route exact path="/courses" component={CourseSchedule} />
+        <Route exact path="/sixth" component={SixthYear} />
+        <Route exact path="/fifth" component={FifthYear} />
+        <Route exact path="/junior" component={ThirdYear} />
         <Route exact path="/" component={Homepage} />
       </Switch>
     )

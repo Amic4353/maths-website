@@ -336,3 +336,66 @@ h2 {
   font-family: 'Gentium Basic', serif;
   font-size: 0.7em;
 }
+
+#message-call-out {
+  color: #009388;
+}
+
+#message-box {
+  background-color: #009388;
+  max-width: 80vw;
+  box-shadow: 5px 5px 10px rgba(150, 150, 150, 0.4);
+}
+#message-box p {
+  padding: 3vh;
+  color: whitesmoke;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8em;
+}
+
+#course-block-container {
+  margin: 15vh 20vw 4vh 20vw;
+  display: grid;
+  grid-template-columns: repeat(3, 20vw);
+  grid-gap: 1vh;
+}
+
+#ind-container {
+  margin-top: 8vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#ind-class-left {
+  width: 25vw;
+}
+
+#ind-class-right {
+  width: 45vw;
+}
+
+#ind-class-date-chips {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 1vh;
+  max-width: 45vw;
+}
+
+#ind-class-content h2 {
+  color: #009388;
+}
+
+.indChip {
+  max-width: 7vw;
+}
+
+.ind-class-radio {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.75em;
+}
+
+.ind-class-text {
+  font-family: 'Gentium Basic', serif;
+  font-size: 0.8em;
+}

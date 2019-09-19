@@ -12,7 +12,7 @@ export default function NavBar() {
         </NavLink>
         <NavLink to="/">Home</NavLink>
         <NavLink to="/about">About & Publications</NavLink>
-        <NavLink to="">Course Schedule</NavLink>
+        <NavLink to="/courses">Course Schedule</NavLink>
       </AppBar>
     </div>
   )
