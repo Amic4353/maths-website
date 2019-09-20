@@ -6,7 +6,7 @@ import FormControl from '@material-ui/core/FormControl'
 import FormLabel from '@material-ui/core/FormLabel'
 import Chip from '@material-ui/core/Chip'
 
-export default class MathBlitz extends React.Component {
+export default class MathBlitzJunior extends React.Component {
   constructor() {
     super()
     this.state = {
@@ -16,15 +16,15 @@ export default class MathBlitz extends React.Component {
       tableInfo: [
         '09:45-10:00 - REGISTRATION',
         '10:00-11:00 - ALGEBRA',
-        '11:15-12:15 - DIFFERENTATION + INTEGRATION',
-        '12:30-13:30 - COMPLEX NUMBERS',
+        '11:15-12:15 - ARITHMETIC, SURDS AND PERCENTAGES',
+        '12:30-13:30 - FUNCTIONS, PATTERNS + GRAPHS',
         '13:30-14:30 - BRING LUNCH + DRINK',
-        '14:30-15:30 - FINANCIAL MATHS + SEQUENCES & SERIES',
-        '15:45-16:45 - ALGEBRA 2'
+        '14:30-15:30 - SETS + NUMBER THEORY',
+        '15:45-16:45 - IN CONTEXT EXAM QUESTIONS'
       ],
       time: 'Saturday 1 June',
       cost:
-        '€180 for both days (€120 for one day) Booking deposit of €50 is essential.'
+        '€150 for both days (€90 for one day) Booking deposit of €50 is essential.'
     }
     this.handleChange = this.handleChange.bind(this)
   }
@@ -48,13 +48,13 @@ export default class MathBlitz extends React.Component {
       this.setState({
         title: 'Higher Level Maths - Paper 2',
         tableInfo: [
-          '09:45-10:00 - REGISTRATION',
-          '10:00-11:00 - TRIGONOMETRY 1',
-          '11:15-12:15 - LINE + CIRCLE',
-          '12:30-13:30 - PROBABILITY',
+          'Sept 09:45-10:00 - REGISTRATION',
+          '10:00-11:00 - PROBABILITY + STATISTICS',
+          '11:15-12:15 - GEOMETRY',
+          '12:30-13:30 - LINE + TRIGONOMETRY',
           '13:30-14:30 - BRING LUNCH + DRINK',
-          '14:30-15:30 - INFERENTIAL STATISTICS',
-          '15:45-16:45 - TRIGONOMETRY 2 + GEOMETRY'
+          '14:30-15:30 - AREA, NETS & VOLUME',
+          '15:45-16:45 - IN CONTEXT EXAM QUESTIONS'
         ],
         time: 'Saturday 8 June'
       })
@@ -66,7 +66,7 @@ export default class MathBlitz extends React.Component {
       <div id="ind-container">
         <img id="ind-class-left" src="https://i.imgur.com/zRlV7Tt.jpg" />
         <div id="ind-class-right">
-          <h1>6th Year - Maths Leaving Certs</h1>
+          <h1>Junior - Maths Leaving Certs</h1>
           <FormControl component="fieldset">
             <FormLabel className="ind-class-text" component="legend">
               Class Type

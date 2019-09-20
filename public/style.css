@@ -375,11 +375,16 @@ h2 {
   width: 45vw;
 }
 
-#ind-class-date-chips {
+.ind-class-date-chips {
   display: grid;
   grid-template-columns: repeat(4, auto);
   grid-gap: 1vh;
   max-width: 45vw;
+}
+
+#ind-class-schedule-chips {
+  display: flex;
+  flex-direction: column;
 }
 
 #ind-class-content h2 {
@@ -388,6 +393,11 @@ h2 {
 
 .indChip {
   max-width: 7vw;
+}
+
+.indChipSchedule {
+  max-width: 35vw;
+  margin-top: 1vh;
 }
 
 .ind-class-radio {

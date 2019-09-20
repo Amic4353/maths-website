@@ -13,7 +13,10 @@ import {
   CourseSchedule,
   SixthYear,
   FifthYear,
-  ThirdYear
+  ThirdYear,
+  FreeClass,
+  MathBlitz,
+  MathBlitzJunior
 } from './components'
 import {me} from './store'
 
@@ -35,6 +38,9 @@ class Routes extends Component {
         <Route exact path="/sixth" component={SixthYear} />
         <Route exact path="/fifth" component={FifthYear} />
         <Route exact path="/junior" component={ThirdYear} />
+        <Route exact path="/blitzleaving" component={MathBlitz} />
+        <Route exact path="/blitzjunior" component={MathBlitzJunior} />
+        <Route exact path="/free" component={FreeClass} />
         <Route exact path="/" component={Homepage} />
       </Switch>
     )

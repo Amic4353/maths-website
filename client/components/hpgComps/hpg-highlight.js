@@ -1,5 +1,4 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
 import {withStyles} from '@material-ui/core/styles'
 
 import Button from '@material-ui/core/Button'
@@ -28,7 +27,7 @@ export default function Highlight() {
           I'm organizing a free prep class for 6th year higher level. The class
           will cover algebra, logs and trigonomentry.
         </p>
-        <ColorButton variant="contained" color="#009388">
+        <ColorButton variant="contained" color="#009388" href="/free">
           Get Started
         </ColorButton>
       </div>

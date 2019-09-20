@@ -1,9 +1,4 @@
 import React from 'react'
-import Radio from '@material-ui/core/Radio'
-import RadioGroup from '@material-ui/core/RadioGroup'
-import FormControlLabel from '@material-ui/core/FormControlLabel'
-import FormControl from '@material-ui/core/FormControl'
-import FormLabel from '@material-ui/core/FormLabel'
 import Chip from '@material-ui/core/Chip'
 
 export default class ThirdYear extends React.Component {
@@ -27,7 +22,9 @@ export default class ThirdYear extends React.Component {
         'Nov 27',
         'Dec 4',
         'Dec 11',
-        'Dec 18',
+        'Dec 18'
+      ],
+      nextyear: [
         'Jan 8',
         'Jan 15',
         'Jan 22',
@@ -67,9 +64,15 @@ export default class ThirdYear extends React.Component {
             <p className="ind-class-text">{this.state.description}</p>
             <p className="ind-class-text">Class Time(s): {this.state.time}</p>
             <p className="ind-class-text">Class Price: {this.state.cost}</p>
-            <p className="ind-class-text">Dates:</p>
-            <div id="ind-class-date-chips">
+            <p className="ind-class-text">2019 Dates:</p>
+            <div className="ind-class-date-chips">
               {this.state.tableInfo.map((elem, indx) => (
+                <Chip className="indChip" key={indx} label={elem} />
+              ))}
+            </div>
+            <p className="ind-class-text">2020 Dates:</p>
+            <div className="ind-class-date-chips">
+              {this.state.nextyear.map((elem, indx) => (
                 <Chip className="indChip" key={indx} label={elem} />
               ))}
             </div>
