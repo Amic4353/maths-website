@@ -409,3 +409,8 @@ h2 {
   font-family: 'Gentium Basic', serif;
   font-size: 0.8em;
 }
+
+.snackbar {
+  position: center;
+  max-width: 20vw;
+}

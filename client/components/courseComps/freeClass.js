@@ -1,5 +1,6 @@
 import React from 'react'
 import Chip from '@material-ui/core/Chip'
+import CourseModal from './courseModal'
 
 export default class FreeClass extends React.Component {
   constructor() {
@@ -18,19 +19,23 @@ export default class FreeClass extends React.Component {
 
   render() {
     return (
-      <div id="ind-container">
-        <img id="ind-class-left" src="https://i.imgur.com/83HYM89.jpg" />
-        <div id="ind-class-right">
-          <h1>Free Preparation Class for 6th Year - Higher Level</h1>
+      <div>
+        <CourseModal page="Free Prep Class for 6th Years" />
 
-          <div id="ind-class-content">
-            <h2>{this.state.title}</h2>
-            <p className="ind-class-text">{this.state.description}</p>
-            <p className="ind-class-text">2019 Dates:</p>
-            <div className="ind-class-schedule-chips">
-              {this.state.tableInfo.map((elem, indx) => (
-                <Chip className="indChipSchedule" key={indx} label={elem} />
-              ))}
+        <div id="ind-container">
+          <img id="ind-class-left" src="https://i.imgur.com/83HYM89.jpg" />
+          <div id="ind-class-right">
+            <h1>Free Preparation Class for 6th Year - Higher Level</h1>
+
+            <div id="ind-class-content">
+              <h2>{this.state.title}</h2>
+              <p className="ind-class-text">{this.state.description}</p>
+              <p className="ind-class-text">2019 Dates:</p>
+              <div className="ind-class-schedule-chips">
+                {this.state.tableInfo.map((elem, indx) => (
+                  <Chip className="indChipSchedule" key={indx} label={elem} />
+                ))}
+              </div>
             </div>
           </div>
         </div>

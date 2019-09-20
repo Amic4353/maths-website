@@ -5,6 +5,7 @@ import FormControlLabel from '@material-ui/core/FormControlLabel'
 import FormControl from '@material-ui/core/FormControl'
 import FormLabel from '@material-ui/core/FormLabel'
 import Chip from '@material-ui/core/Chip'
+import CourseModal from './courseModal'
 
 export default class FifthYear extends React.Component {
   constructor() {
@@ -152,53 +153,56 @@ export default class FifthYear extends React.Component {
 
   render() {
     return (
-      <div id="ind-container">
-        <img id="ind-class-left" src="https://i.imgur.com/qKKYUb8.jpg" />
-        <div id="ind-class-right">
-          <h1>5th Year - Maths Leaving Certs</h1>
-          <FormControl component="fieldset">
-            <FormLabel className="ind-class-text" component="legend">
-              Class Type
-            </FormLabel>
-            <RadioGroup
-              aria-label="position"
-              name="position"
-              value={this.state.value}
-              onChange={this.handleChange}
-              row
-            >
-              <FormControlLabel
-                value="wednesday"
-                control={<Radio color="#009388" />}
-                label="Wednesday Night - Higher Level"
-                labelPlacement="end"
-                className="ind-class-radio"
-              />
-              <FormControlLabel
-                value="thursday"
-                control={<Radio color="#009388" />}
-                label="Thursday Night - Higher Level"
-                labelPlacement="end"
-                className="ind-class-radio"
-              />
-            </RadioGroup>
-          </FormControl>
-          <div id="ind-class-content">
-            <h2>{this.state.title}</h2>
-            <p className="ind-class-text">{this.state.description}</p>
-            <p className="ind-class-text">Class Time(s): {this.state.time}</p>
-            <p className="ind-class-text">Class Price: {this.state.cost}</p>
-            <p className="ind-class-text">2019 Dates:</p>
-            <div className="ind-class-date-chips">
-              {this.state.tableInfo.map((elem, indx) => (
-                <Chip className="indChip" key={indx} label={elem} />
-              ))}
-            </div>
-            <p className="ind-class-text">2020 Dates:</p>
-            <div className="ind-class-date-chips">
-              {this.state.nextyear.map((elem, indx) => (
-                <Chip className="indChip" key={indx} label={elem} />
-              ))}
+      <div>
+        <CourseModal page="5th Year Maths Grinds" />
+        <div id="ind-container">
+          <img id="ind-class-left" src="https://i.imgur.com/qKKYUb8.jpg" />
+          <div id="ind-class-right">
+            <h1>5th Year - Maths Leaving Certs</h1>
+            <FormControl component="fieldset">
+              <FormLabel className="ind-class-text" component="legend">
+                Class Type
+              </FormLabel>
+              <RadioGroup
+                aria-label="position"
+                name="position"
+                value={this.state.value}
+                onChange={this.handleChange}
+                row
+              >
+                <FormControlLabel
+                  value="wednesday"
+                  control={<Radio color="#009388" />}
+                  label="Wednesday Night - Higher Level"
+                  labelPlacement="end"
+                  className="ind-class-radio"
+                />
+                <FormControlLabel
+                  value="thursday"
+                  control={<Radio color="#009388" />}
+                  label="Thursday Night - Higher Level"
+                  labelPlacement="end"
+                  className="ind-class-radio"
+                />
+              </RadioGroup>
+            </FormControl>
+            <div id="ind-class-content">
+              <h2>{this.state.title}</h2>
+              <p className="ind-class-text">{this.state.description}</p>
+              <p className="ind-class-text">Class Time(s): {this.state.time}</p>
+              <p className="ind-class-text">Class Price: {this.state.cost}</p>
+              <p className="ind-class-text">2019 Dates:</p>
+              <div className="ind-class-date-chips">
+                {this.state.tableInfo.map((elem, indx) => (
+                  <Chip className="indChip" key={indx} label={elem} />
+                ))}
+              </div>
+              <p className="ind-class-text">2020 Dates:</p>
+              <div className="ind-class-date-chips">
+                {this.state.nextyear.map((elem, indx) => (
+                  <Chip className="indChip" key={indx} label={elem} />
+                ))}
+              </div>
             </div>
           </div>
         </div>

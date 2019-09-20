@@ -5,6 +5,7 @@ import FormControlLabel from '@material-ui/core/FormControlLabel'
 import FormControl from '@material-ui/core/FormControl'
 import FormLabel from '@material-ui/core/FormLabel'
 import Chip from '@material-ui/core/Chip'
+import CourseModal from './courseModal'
 
 export default class MathBlitzJunior extends React.Component {
   constructor() {
@@ -63,47 +64,50 @@ export default class MathBlitzJunior extends React.Component {
 
   render() {
     return (
-      <div id="ind-container">
-        <img id="ind-class-left" src="https://i.imgur.com/zRlV7Tt.jpg" />
-        <div id="ind-class-right">
-          <h1>Junior - Maths Leaving Certs</h1>
-          <FormControl component="fieldset">
-            <FormLabel className="ind-class-text" component="legend">
-              Class Type
-            </FormLabel>
-            <RadioGroup
-              aria-label="position"
-              name="position"
-              value={this.state.value}
-              onChange={this.handleChange}
-              row
-            >
-              <FormControlLabel
-                value="paper1"
-                control={<Radio color="#009388" />}
-                label="Paper 1"
-                labelPlacement="end"
-                className="ind-class-radio"
-              />
-              <FormControlLabel
-                value="paper2"
-                control={<Radio color="#009388" />}
-                label="Paper 2"
-                labelPlacement="end"
-                className="ind-class-radio"
-              />
-            </RadioGroup>
-          </FormControl>
-          <div id="ind-class-content">
-            <h2>{this.state.title}</h2>
-            <p className="ind-class-text">{this.state.description}</p>
-            <p className="ind-class-text">Class Time(s): {this.state.time}</p>
-            <p className="ind-class-text">Class Price: {this.state.cost}</p>
-            <p className="ind-class-text">Material Covered:</p>
-            <div id="ind-class-schedule-chips">
-              {this.state.tableInfo.map((elem, indx) => (
-                <Chip className="indChipSchedule" key={indx} label={elem} />
-              ))}
+      <div>
+        <CourseModal page="3rd Year Maths Blitz" />
+        <div id="ind-container">
+          <img id="ind-class-left" src="https://i.imgur.com/zRlV7Tt.jpg" />
+          <div id="ind-class-right">
+            <h1>Junior - Maths Leaving Certs</h1>
+            <FormControl component="fieldset">
+              <FormLabel className="ind-class-text" component="legend">
+                Class Type
+              </FormLabel>
+              <RadioGroup
+                aria-label="position"
+                name="position"
+                value={this.state.value}
+                onChange={this.handleChange}
+                row
+              >
+                <FormControlLabel
+                  value="paper1"
+                  control={<Radio color="#009388" />}
+                  label="Paper 1"
+                  labelPlacement="end"
+                  className="ind-class-radio"
+                />
+                <FormControlLabel
+                  value="paper2"
+                  control={<Radio color="#009388" />}
+                  label="Paper 2"
+                  labelPlacement="end"
+                  className="ind-class-radio"
+                />
+              </RadioGroup>
+            </FormControl>
+            <div id="ind-class-content">
+              <h2>{this.state.title}</h2>
+              <p className="ind-class-text">{this.state.description}</p>
+              <p className="ind-class-text">Class Time(s): {this.state.time}</p>
+              <p className="ind-class-text">Class Price: {this.state.cost}</p>
+              <p className="ind-class-text">Material Covered:</p>
+              <div id="ind-class-schedule-chips">
+                {this.state.tableInfo.map((elem, indx) => (
+                  <Chip className="indChipSchedule" key={indx} label={elem} />
+                ))}
+              </div>
             </div>
           </div>
         </div>

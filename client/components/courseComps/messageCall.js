@@ -9,7 +9,8 @@ export default function Message() {
       <div id="message-box">
         <p>
           Try the first class with no strings attached. No strings attached
-          means no upfront payment and no obligation to attend the full course.
+          means no upfront payment and no obligation to attend the full course.<br />Contact
+          George for details.
         </p>
       </div>
     </div>
