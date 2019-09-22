@@ -11,21 +11,8 @@ import DialogTitle from '@material-ui/core/DialogTitle'
 export default class ContactForm extends React.Component {
   constructor() {
     super()
-    this.state = {
-      open: false,
-      setOpen: false
-    }
     this.handleSubmit = this.handleSubmit.bind(this)
-    this.handleClickOpen = this.handleClickOpen.bind(this)
-    this.handleClose = this.handleClose.bind(this)
-  }
-
-  handleClickOpen() {
-    this.setState({setOpen: true})
-  }
-
-  handleClose() {
-    this.setState({setOpen: false})
+    this.resetForm = this.resetForm.bind(this)
   }
 
   handleSubmit(e) {

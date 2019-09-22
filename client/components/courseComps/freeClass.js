@@ -13,7 +13,9 @@ export default class FreeClass extends React.Component {
         'Thurs 22 Aug - 12:00 to 15:00',
         'Sat 24 Aug - 12:00 to 15:00',
         'Thurs 29 Aug - 18:00 to 21:00'
-      ]
+      ],
+      location: `St Bridge's Resource Center,
+      Killester, Dublin 5`
     }
   }
 
@@ -30,6 +32,9 @@ export default class FreeClass extends React.Component {
             <div id="ind-class-content">
               <h2>{this.state.title}</h2>
               <p className="ind-class-text">{this.state.description}</p>
+              <p className="ind-class-text">
+                Class Location: {this.state.location}
+              </p>
               <p className="ind-class-text">2019 Dates:</p>
               <div className="ind-class-schedule-chips">
                 {this.state.tableInfo.map((elem, indx) => (

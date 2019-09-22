@@ -62,7 +62,7 @@ export default class Footer extends React.Component {
               color="primary"
               onClick={this.handleClickOpen}
             >
-              E-mail: georgeedwardhumphrey@gmail.com
+              E-mail: info.georgehumphrey@gmail.com
             </a>
             <p id="tel">Tel: 087 978 7380</p>
           </div>
@@ -78,6 +78,7 @@ export default class Footer extends React.Component {
             open={this.state.setOpen}
             onClose={this.handleClose}
             aria-labelledby="form-dialog-title"
+            id="footer-contact"
           >
             <DialogTitle id="form-dialog-title">Contact George</DialogTitle>
             <DialogContent>
@@ -98,16 +99,17 @@ export default class Footer extends React.Component {
                     label="Name"
                     type="text"
                     fullWidth
+                    required
                   />
                 </div>
                 <div className="form-group">
                   <TextField
-                    autoFocus
                     margin="dense"
                     id="email"
                     label="Email Address"
                     type="email"
                     fullWidth
+                    required
                   />
                 </div>
                 <div className="form-group">

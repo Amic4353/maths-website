@@ -5,8 +5,15 @@ import Button from '@material-ui/core/Button'
 import {makeStyles} from '@material-ui/core/styles'
 
 //functions for the snackbars
-const action = (type, link) => (
-  <Link to={link}>
+const action = (type, link, page = '') => (
+  <Link
+    to={{
+      pathname: link,
+      state: {
+        page
+      }
+    }}
+  >
     <Button color="#009388" size="small">
       {type}
     </Button>
@@ -39,14 +46,6 @@ const useStyles = makeStyles(theme => ({
   }
 }))
 
-const changeModal = changeVar => {
-  console.log(changeVar)
-  let change = !changeVar
-  console.log('test', change)
-  changeVar = change
-  console.log('updateVar', changeVar)
-}
-
 export default function CourseModal(props) {
   const page = props.page
   const classes = useStyles()
@@ -56,39 +55,20 @@ export default function CourseModal(props) {
     top: '0',
     left: '0'
   }
-  const modalFlag = false
 
-  if (page === 'courses') {
-    return (
-      <div style={divStyle}>
-        <SnackbarContent
-          className={classes.snackbar}
-          message="Home"
-          action={action('Back', '/courses')}
-        />
+  return (
+    <div style={divStyle}>
+      <SnackbarContent
+        className={classes.snackbar}
+        message="Back to"
+        action={action('All Courses', '/courses')}
+      />
 
-        <SnackbarContent
-          className={classes.snackbar}
-          message="Ready?"
-          action={buttonClick('Enroll Now', modalFlag)}
-        />
-      </div>
-    )
-  } else {
-    return (
-      <div style={divStyle}>
-        <SnackbarContent
-          className={classes.snackbar}
-          message="Back to"
-          action={action('All Courses', '/courses')}
-        />
-
-        <SnackbarContent
-          className={classes.snackbar}
-          message="Enroll Now"
-          action={buttonClick('Contact George', modalFlag)}
-        />
-      </div>
-    )
-  }
+      <SnackbarContent
+        className={classes.snackbar}
+        message="Enroll Now"
+        action={action('Contact George', '/signup', page)}
+      />
+    </div>
+  )
 }

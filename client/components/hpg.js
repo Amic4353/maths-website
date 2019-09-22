@@ -6,6 +6,7 @@ import CourseBlock from './courseComps/courseBlock'
 import Highlight from './hpgComps/hpg-highlight'
 import About from './hpgComps/hpg-about'
 import SignUp from './hpgComps/signup'
+import Footer from './footer'
 
 export default function Hpg() {
   return (
@@ -15,6 +16,7 @@ export default function Hpg() {
       <Highlight />
       <About />
       <SignUp />
+      <Footer />
     </div>
   )
 }

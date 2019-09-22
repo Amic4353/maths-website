@@ -21,14 +21,14 @@ const useStyles = makeStyles({
 const courseContent = [
   {
     title: 'Maths Junior Cert',
-    img: '',
+    img: 'https://i.imgur.com/rtBDNW7.jpg',
     description: '',
     first: 'Higher Level',
     firstLink: '/junior'
   },
   {
     title: 'Maths Leaving Cert',
-    img: '',
+    img: 'https://i.imgur.com/Iy0yAih.jpg',
     description: '',
     first: '5th Year',
     firstLink: '/fifth',
@@ -36,8 +36,8 @@ const courseContent = [
     secondLink: '/sixth'
   },
   {
-    title: 'Maths Blitz',
-    img: '',
+    title: 'Maths Blitz Grinds',
+    img: 'https://i.imgur.com/tyN1PNE.jpg',
     description: '',
     first: 'Junior',
     firstLink: '/blitzjunior',

@@ -25,15 +25,33 @@ transporter.verify((error, success) => {
 
 router.post('/send', (req, res, next) => {
   let name = req.body.name
+  let parentName = req.body.parentName
   let email = req.body.email
+  let phone = req.body.phone
+  let classType = req.body.classType
   let message = req.body.message
-  let content = `name: ${name} \n email: ${email} \n message: ${message} `
+  let content
+  let mail
 
-  var mail = {
-    from: email,
-    to: 'info.georgehumphrey@gmail.com',
-    subject: `Message from ${name}`,
-    text: content
+  if (classType) {
+    content = `name: ${name} \n parent name: ${parentName} \n email: ${email} \n  phone: ${phone} \n class type: ${classType} \n message: ${message} `
+
+    mail = {
+      from: email,
+      to: 'info.georgehumphrey@gmail.com',
+      subject: `Course Booking from ${name}`,
+      text: content
+    }
+  } else {
+    content = `name: ${name} \n email: ${email} \n message: ${message}
+    `
+
+    mail = {
+      from: email,
+      to: 'info.georgehumphrey@gmail.com',
+      subject: `Message from ${name}`,
+      text: content
+    }
   }
 
   transporter.sendMail(mail, (err, data) => {

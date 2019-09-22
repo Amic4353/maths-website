@@ -112,6 +112,19 @@ h2 {
   }
 }
 
+#footer-contact {
+  label {
+    color: $text-color;
+    font-family: $font-stack;
+    font-size: 0.8em;
+  }
+  .form-group {
+    textarea {
+      width: 100%;
+    }
+  }
+}
+
 #quick-lnks {
   display: flex;
   flex-direction: column;

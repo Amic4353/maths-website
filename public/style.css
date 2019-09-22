@@ -101,6 +101,16 @@ h2 {
   text-decoration: underline;
 }
 
+#footer-contact label {
+  color: #3c4043;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8em;
+}
+
+#footer-contact .form-group textarea {
+  width: 100%;
+}
+
 #quick-lnks {
   display: flex;
   flex-direction: column;

@@ -23,9 +23,11 @@ export default class MathBlitz extends React.Component {
         '14:30-15:30 - FINANCIAL MATHS + SEQUENCES & SERIES',
         '15:45-16:45 - ALGEBRA 2'
       ],
-      time: 'Saturday 1 June',
+      time: 'Saturday 1 June 2020',
       cost:
-        '€180 for both days (€120 for one day) Booking deposit of €50 is essential.'
+        '€180 for both days (€120 for one day) Booking deposit of €50 is essential.',
+      location: `St Bridge's Resource Center,
+        Killester, Dublin 5`
     }
     this.handleChange = this.handleChange.bind(this)
   }
@@ -43,7 +45,7 @@ export default class MathBlitz extends React.Component {
           '14:30-15:30 - FINANCIAL MATHS + SEQUENCES & SERIES',
           '15:45-16:45 - ALGEBRA 2'
         ],
-        time: 'Saturday 1 June'
+        time: 'Saturday 1 June 2020'
       })
     } else {
       this.setState({
@@ -57,7 +59,7 @@ export default class MathBlitz extends React.Component {
           '14:30-15:30 - INFERENTIAL STATISTICS',
           '15:45-16:45 - TRIGONOMETRY 2 + GEOMETRY'
         ],
-        time: 'Saturday 8 June'
+        time: 'Saturday 8 June 2020'
       })
     }
   }
@@ -65,7 +67,7 @@ export default class MathBlitz extends React.Component {
   render() {
     return (
       <div>
-        <CourseModal page="6th Year Maths Blitz" />
+        <CourseModal page={`6th Year Maths Blitz - ${this.state.title}`} />
         <div id="ind-container">
           <img id="ind-class-left" src="https://i.imgur.com/zRlV7Tt.jpg" />
           <div id="ind-class-right">
@@ -101,6 +103,9 @@ export default class MathBlitz extends React.Component {
               <h2>{this.state.title}</h2>
               <p className="ind-class-text">{this.state.description}</p>
               <p className="ind-class-text">Class Time(s): {this.state.time}</p>
+              <p className="ind-class-text">
+                Class Location: {this.state.location}
+              </p>
               <p className="ind-class-text">Class Price: {this.state.cost}</p>
               <p className="ind-class-text">Material Covered:</p>
               <div id="ind-class-schedule-chips">

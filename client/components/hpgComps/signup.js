@@ -48,22 +48,22 @@ class SignUp extends React.Component {
           >
             <div className="form-group">
               <TextField
-                autoFocus
                 margin="dense"
                 id="name"
                 label="Name"
                 type="text"
                 fullWidth
+                required
               />
             </div>
             <div className="form-group">
               <TextField
-                autoFocus
                 margin="dense"
                 id="email"
                 label="Email Address"
                 type="email"
                 fullWidth
+                required
               />
             </div>
             <div className="form-group">

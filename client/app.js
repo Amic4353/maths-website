@@ -1,7 +1,7 @@
 import React from 'react'
 import history from './history'
 
-import {Navbar, TopBar, Footer} from './components'
+import {Navbar, TopBar} from './components'
 import Routes from './routes'
 
 const App = () => {
@@ -10,7 +10,6 @@ const App = () => {
       <TopBar />
       <Navbar currPage={history.location.pathname} />
       <Routes />
-      <Footer />
     </div>
   )
 }

@@ -54,6 +54,8 @@ export default class SixthYear extends React.Component {
         'May 27'
       ],
       time: '20:00 - 21:20',
+      location: `St Bridge's Resource Center,
+      Killester, Dublin 5`,
       cost: '30 euro per class'
     }
     this.handleChange = this.handleChange.bind(this)
@@ -154,7 +156,7 @@ export default class SixthYear extends React.Component {
   render() {
     return (
       <div>
-        <CourseModal page="6th Year Maths Grinds" />
+        <CourseModal page={`6th Year Maths Grinds - ${this.state.title}`} />
         <div id="ind-container">
           <img id="ind-class-left" src="https://i.imgur.com/zRlV7Tt.jpg" />
           <div id="ind-class-right">
@@ -190,6 +192,9 @@ export default class SixthYear extends React.Component {
               <h2>{this.state.title}</h2>
               <p className="ind-class-text">{this.state.description}</p>
               <p className="ind-class-text">Class Time(s): {this.state.time}</p>
+              <p className="ind-class-text">
+                Class Location: {this.state.location}
+              </p>
               <p className="ind-class-text">Class Price: {this.state.cost}</p>
               <p className="ind-class-text">2019 Dates:</p>
               <div className="ind-class-date-chips">
